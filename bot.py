@@ -1,6 +1,7 @@
 # bot.py
 
 import discord
+from discord.ext import commands
 import yt_dlp
 
 class MusicBot(discord.Client):
