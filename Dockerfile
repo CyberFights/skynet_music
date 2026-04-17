@@ -1,5 +1,10 @@
 FROM python:3.11-slim
-RUN apt-get update && apt-get install -y ffmpeg gcc libsodium-dev build-essential
+RUN apt-get update && apt-get install -y \
+    ffmpeg \
+    gcc \
+    libsodium-dev \
+    libopus-dev \
+    build-essential
 WORKDIR /app
 COPY . .
 COPY requirements.txt .
